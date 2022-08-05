@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+/* Navbar */
+.navbar {
+    background: #000000;
+}
+
+/* .nav-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0.125rem;
+} */
+/* .nav-item:hover::after {
+    width: 100%;
+} */
+
+/* .navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fec400
+} */
+
+.navbar-nav {
+    position: relative;
+    top: 2%;
+    left: 20%;
+}
+
+.navbar-nav a{
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: .8em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 150px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+ 
+}
+.navbar-nav a:hover{
+  text-shadow: 0 0 20px #fff, 0 0 30px #50faf4, 0 0 40px #50faf4, 0 0 50px #50faf4, 0 0 60px #50faf4, 0 0 70px #50faf4, 0 0 80px #50faf4;
+}
+
+.navbar-nav .dot{
+  width: 8px;
+  height: 6px;
+  background: #fddb3a;
+  border-radius: 50%;
+  opacity: 0;
+  /* -webkit-transform: translateX(30px);
+  transform: translateX(50px); */
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navbar-nav a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(110px);
+  transform: translateX(110px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navbar-nav a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.nav-link  a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(285px);
+  transform: translateX(285px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.nav-link  a:nth-child(5):hover ~ .dot {
+  -webkit-transform: translateX(285px);
+  transform: translateX(285px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+/* .video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+} */
+
+/* .video-responsive iframe{
+    left:0;
+    top:0;
+    height:70%;
+    width:70%;
+    position:absolute;
+} */
+
+/* #buttonsub{
+    background-image: linear-gradient(to bottom, blue, aqua);
+}
+#buttonsub:hover{
+    background-image: linear-gradient(to right, aqua, blue);
+} */
+
+
+/* divider */
+.custom-shape-divider-top-1653818103 {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1653818103 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 79px;
+    background-color: #0099ff;
+}
+
+.custom-shape-divider-top-1653818103 .shape-fill {
+    fill: rgb(255, 255, 255);
+}
+
+/* text animations */
+
+  .slide {
+    animation-duration: 3s;
+    animation-name: slidein;
+    position: absolute;
+    color: white;
+    top: 200px;
+    backdrop-filter: blur(20px);
+    text-shadow: 0.27vw 0.27vw #0099ff;
+    font-size: 7vw;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    75% {
+      font-size: 500%;
+      margin-left: 25%;
+      width: 150%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+/* teachers */
+.slide-in-bottom {
+	animation: slide-in-bottom 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  background-image: linear-gradient(to bottom, #0099ff, white);
+  height: 73px;
+  color: #ffffff;
+  text-shadow: 0px 0px 5px #242425, 0px 0px 10px #93c3ed, 0px 0px 10px #93c3ed,
+  0px 0px 20px #93c3ed;
+}
+
+@keyframes slide-in-bottom {
+    0% {
+      transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.slide-in-bottom2 {
+    animation: slide-in-bottom2 3.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+  
+@keyframes slide-in-bottom2 {
+      0% {
+        transform: translateY(1000px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+
+

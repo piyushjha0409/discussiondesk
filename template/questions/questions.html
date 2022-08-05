@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}
+Questions
+{% endblock title %}
+
+{% block body %}
+<div class="container my-3">
+    <h2>Coding Questions By Mentors</h2>
+    {% for Ques in allPosts %}
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 my-4 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0"><u>{{Ques.title}}</u></h3>
+            <strong class="d-inline-block mb-2 text-primary">Author: {{Ques.author}}</strong>
+            <h6>Topic:- {{Ques.topic}}</h6>
+            <div class="mb-2 text-muted">{{Ques.timeStamp}}</div>
+            <p class="card-text mb-auto">{{Ques.content| truncatechars:500}}</p>
+            <div class="my-2">
+            	<a href="/questions/{{Ques.slug}}" role="button" class="btn btn-primary">Continue reading</a>
+            </div>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+        </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
