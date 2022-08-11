@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+}
 /* Navbar */
 .navbar {
-    background: #000000;
+    background: #251f1f;
 }
 
 .navbar-nav {
@@ -101,9 +105,16 @@
     fill: rgb(255, 255, 255);
 }
 
+/* title */
+.dd{
+ position: absolute;
+ color: white;
+ top: 11vw;
+ font-size: 9vw;
+}
 /* text animations */
 
-  .slide {
+  /* .slide {
     animation-duration: 3s;
     animation-name: slidein;
     position: absolute;
@@ -112,7 +123,7 @@
     backdrop-filter: blur(20px);
     text-shadow: 0.27vw 0.27vw #0099ff;
     font-size: 7vw;
-  }
+  } */
   
   @keyframes slidein {
     from {
@@ -133,16 +144,15 @@
   }
 
 /* teachers */
-.slide-in-bottom {
-	animation: slide-in-bottom 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  background-image: linear-gradient(to bottom, #0099ff, white);
+/* .slide-in-bottom {
+	/* animation: slide-in-bottom 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
+  /* background-image: linear-gradient(to bottom, #0099ff, white);
   height: 73px;
   color: #ffffff;
   text-shadow: 0px 0px 5px #242425, 0px 0px 10px #93c3ed, 0px 0px 10px #93c3ed,
-  0px 0px 20px #93c3ed;
-}
+  0px 0px 20px #93c3ed;} */
 
-@keyframes slide-in-bottom {
+/* @keyframes slide-in-bottom {
     0% {
       transform: translateY(1000px);
       opacity: 0;
@@ -151,12 +161,17 @@
       transform: translateY(0);
       opacity: 1;
     }
-  }
-
+  } */
+.mentors{
+  color: #f6f4e6;
+}
 .slide-in-bottom2 {
     animation: slide-in-bottom2 3.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    display: block;
+    text-align: center;
 }
-  
+
+/*
 @keyframes slide-in-bottom2 {
       0% {
         transform: translateY(1000px);
@@ -166,7 +181,7 @@
         transform: translateY(0);
         opacity: 1;
       }
-    }
+    } */
 
 
 
