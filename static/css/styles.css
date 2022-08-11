@@ -29,7 +29,7 @@
 .navbar-nav .dot{
   width: 8px;
   height: 6px;
-  background: #fddb3a;
+  background: #50faf4;
   border-radius: 50%;
   opacity: 0;
   -webkit-transform: translateX(30px);
@@ -39,66 +39,44 @@
 }
 
 .navbar-nav a:nth-child(1):hover ~ .dot {
-  -webkit-transform: translateX(30px);
-  transform: translateX(30px);
+  -webkit-transform: translateX(-725px);
+  transform: translate(-725px, 28px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 
 .navbar-nav a:nth-child(2):hover ~ .dot {
-  -webkit-transform: translateX(110px);
-  transform: translateX(110px);
+  -webkit-transform: translateX(-574px);
+  transform: translate(-574px, 28px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 
 .navbar-nav a:nth-child(3):hover ~ .dot {
-  -webkit-transform: translateX(200px);
-  transform: translateX(200px);
+  -webkit-transform: translateX(-407px);
+  transform: translate(-407px, 28px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 
-.nav-link  a:nth-child(4):hover ~ .dot {
-  -webkit-transform: translateX(285px);
-  transform: translateX(285px);
+.navbar-nav a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(-255px);
+  transform: translate(-255px, 28px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 
-.nav-link  a:nth-child(5):hover ~ .dot {
-  -webkit-transform: translateX(285px);
-  transform: translateX(285px);
+.navbar-nav a:nth-child(5):hover ~ .dot {
+  -webkit-transform: translateX(-103px);
+  transform: translate(-103px, 28px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
-
-/* .video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-} */
-
-/* .video-responsive iframe{
-    left:0;
-    top:0;
-    height:70%;
-    width:70%;
-    position:absolute;
-} */
-
-/* #buttonsub{
-    background-image: linear-gradient(to bottom, blue, aqua);
-}
-#buttonsub:hover{
-    background-image: linear-gradient(to right, aqua, blue);
-} */
 
 
 /* divider */
