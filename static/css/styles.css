@@ -171,16 +171,26 @@
   
   .mentors h1{
   color: #f6f4e6;
-  font-size: 5rem;
+  font-size: 7rem;
   text-align: center;
 }
 
-.slide-in-bottom2 {
+/* .slide-in-bottom2 {
     animation: slide-in-bottom2 3.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     display: block;
     text-align: center;
-}
+} */
 
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.footer img{
+  border-radius: 100%;
+  width: 30vw;
+  height: 30vw;
+
+}
 /*
 @keyframes slide-in-bottom2 {
       0% {
