@@ -28,7 +28,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+  <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark" style="background-color: #131413;">
     <div class="container-fluid">
       <!-- <a class="navbar-brand" href="/" style="padding-bottom: 0px; padding-top: 0px">
         <img src="/static/images/logo iitm.png" alt="Avatar" style="border-radius: 20%; width: 70px; background-color: white;">
@@ -49,16 +49,16 @@
       </div> 
       <div>
         {% if user.is_authenticated %}
-        <p style="color:white; margin-bottom: 0px; margin-right: 20px;">Welcome {{request.user}}</p>
-        <a href="/logout">Logout</a>
+        <p style="color:white; margin-bottom: 0px; margin-right: 20px;">Welcome <b style="color: cyan;">{{request.user}}</b></p>
+        <a type="button" href="/logout" class="button-17" style="text-decoration: none;">Logout</a>
 
         {% else %}
         <!-- Button to trigger signup modal -->
-        <button type="button" class="button-29" data-bs-toggle="modal" data-bs-target="#signupmodal" style="margin-right: 6px;">
+        <button type="button" class="button-17" data-bs-toggle="modal" data-bs-target="#signupmodal" style="margin-right: 6px;">
           Sign up
         </button>
         <!-- Button to trigger login modal -->
-        <button type="button" class="button-29" data-bs-toggle="modal" data-bs-target="#loginmodal">
+        <button type="button" class="button-17" data-bs-toggle="modal" data-bs-target="#loginmodal">
           login
         </button>
         {% endif %}
@@ -148,7 +148,7 @@
             {% csrf_token %}
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="submit" name="login" class="btn btn-primary">Submit</button>
+              <button type="submit" name="login" class="btn btn-primary" style="margin-top: 2vw;">Submit</button>
             </div>
             </form>
         </div>
