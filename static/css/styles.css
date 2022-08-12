@@ -109,7 +109,7 @@
 .dd{
  position: absolute;
  color: white;
- top: 11vw;
+ top: 13vw;
  font-size: 9vw;
 }
 /* text animations */
@@ -162,9 +162,19 @@
       opacity: 1;
     }
   } */
-.mentors{
+  /* container main */
+  container-main{
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .mentors h1{
   color: #f6f4e6;
+  font-size: 5rem;
+  text-align: center;
 }
+
 .slide-in-bottom2 {
     animation: slide-in-bottom2 3.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     display: block;
